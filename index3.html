@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color:  white;
+        }
+        .container{
+            width: 100%;
+            /* height: 100; */
+            margin: 15px;
+            border: 5px solid red;
+            display: flex;
+            /* flex-direction:row-reverse; */
+            justify-content:center;
+            flex-wrap: wrap;
+            
+        }
+        .items{
+            height: 200px;
+            width: 200px;
+            border: 2px solid green;
+            margin: 2px;
+
+            
+        }
+        #item1{
+            background-color: hotpink;
+        }
+        #item2{
+            background-color: blue;
+            flex-grow: 2;
+        }
+        #item3{
+            background-color: goldenrod;
+        }
+        #item4{
+            background-color: brown;
+        }
+        .masonary{
+            display: flex;
+            width: 100%;
+            height: 4900px;
+            box-sizing: border-box;
+            margin: auto;
+            flex-flow: column wrap;
+        }
+        .mblock{
+            /* container for images  */
+            width: 33.33%;
+            padding: 2px;
+            box-sizing: border-box;
+            
+            
+        }
+        .mblock img{
+            padding: 5px;
+            /* m block ki poori jagah le le */
+            width:100%;
+            transition: 1s;
+            
+        } .mblock img:hover{
+            transform: scale(0.9);
+            border-top: 1px solid #ccff00;
+        }
+        
+         
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div class="items" id="item1"> </div>
+         <div class="items" id="item2" ></div>
+         <!-- <div class="items" id="item3"  ></div>
+         <div class="items" id="item4"></div> -->
+     </div>
+
+        
+     <div class="image">
+        <h2> From Our lens</h2>
+        <div class="masonary">
+           <div class="mblock"><img src="pic1.png" alt=""> </div>
+           <div class="mblock"><img src="pic2.png" alt=""> </div>
+           <div class="mblock"><img src="pic3.png" alt=""> </div>
+           <div class="mblock"><img src="pic4.png" alt=""> </div>
+           <div class="mblock"><img src="pic5.png" alt=""> </div>
+           <div class="mblock"><img src="pic6.png" alt=""> </div>
+           <div class="mblock"><img src="pic7.png" alt=""> </div>
+           <div class="mblock"><img src="pic8.png" alt=""> </div>
+           <div class="mblock"><img src="pic9.png" alt=""> </div>
+           <div class="mblock"><img src="pic10.png" alt=""> </div>
+           <div class="mblock"><img src="felix-dubois-robert-CuEvrPd3NYc-unsplash.jpg" alt=""> </div>
+           <div class="mblock"><img src="chris-lawton-5IHz5WhosQE-unsplash.jpg" alt=""> </div>
+           <div class="mblock"><img src="background.png" alt=""> </div>
+           <div class="mblock"><img src="https://source.unsplash.com/1600x900/?movies,hollywood" alt=""> </div>
+           <div class="mblock"><img src="https://source.unsplash.com/600x900/?movies,bollywood" alt=""> </div>
+           <div class="mblock"><img src="https://source.unsplash.com/600x900/?boy" alt=""> </div>
+           <div class="mblock"><img src="https://source.unsplash.com/1600x900/?india" alt=""> </div>
+           <div class="mblock"><img src="https://source.unsplash.com/1000x2900/?nature,trees" alt=""> </div>
+           <div class="mblock"><img src="https://source.unsplash.com/1600x900/?anime" alt=""> </div>
+           <div class="mblock"><img src="https://source.unsplash.com/1600x900/?cartoon,anime" alt=""> </div>
+
+        </div>
+    </div>
+</body>
+</html>

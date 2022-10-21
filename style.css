@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(background.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:20px;
+}
+.logo{
+    width: 110px;
+}
+nav ul{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10PX;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    color: #ff5361;
+}
+.upload-btn{
+    background-color: #ff5361;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius:30px;
+    margin-left: 25px;
+    transition: 0.5s;
+}
+.upload-btn:hover{
+    transform: scale(0.9);
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+
+}
+.container h1{
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.container input{
+    width: 90%;
+    max-width: 840px;
+    height: 55px;
+    border-radius: 30px;
+    border: none;
+    padding: 0 30px;
+    outline: none;
+    margin: 20px 0;
+    font-size: 16px
+}
+::placeholder{
+    font-weight: 500;
+    font-size: 15px;
+    
+
+}
+.container a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 5px;
+}
+.container a:hover{
+    color: #ff5361;
+}
+.image{
+    padding: 0 10%;
+    margin : 40px 0;
+    box-sizing: border-box;
+    
+}
+.image h2{
+    color: #535353;
+    font-size: 26px;
+    margin: 20px 12px;
+    font-weight: 500;
+}
+.masonary{
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 2000px;
+    margin: auto;
+    width: 100%;
+}
+.mblock{
+    width: 33.33%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.mblock img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.9s;
+}
+.mblock img:hover{
+    transform: scale(1.05);
+}
+.explore-btn{
+    background-color: #ff5361;
+   display: block;
+   width: 50%;
+   max-width: 350px;
+   text-decoration: none;
+   text-align: center;
+   padding: 14px 0;
+   border-radius: 30px;
+   margin: 60px auto;
+   color: white;
+   transition: 1s;
+}
+.explore-btn:hover{
+    transform: scale(0.9);
+}
